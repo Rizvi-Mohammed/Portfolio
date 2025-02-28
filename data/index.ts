@@ -165,21 +165,21 @@ export const workExperience = [
   {
     id: 2,
     title: "Software Engineer - Royal Bank of Canada",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    desc: "Designed and developed Storage related cloud and automation infrastructure for Teams at RBC.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/rbc-4.svg",
   },
   {
     id: 3,
     title: "Web Developer - WebKraftz",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    desc: "Fullstack Shopify Developer - providing Theme development, customization, automations, apps, and functions.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/wk.jpeg",
   },
   {
     id: 4,
     title: "Peer Mentor and TA - Lassonde School of Engineering",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    desc: "Helped first and second year students navigate Engineering courses, internships and held classes for foundations of Electrical and Computer Engineering.",
     className: "md:col-span-2",
     thumbnail: "/lse.png",
   },
