@@ -55,7 +55,7 @@ export const BentoGridItem = ({
   const frontEnd = ["VanillaJS.svg", "next.svg", "React.png", "TypeScript.png"];
   const backEnd = ["Python.png", "Java.svg", "C#.png", "Node.png", "Express.webp"];
   const dataBase = ["SQL.svg", "PostgreSQL.png", "mongoDB.svg", "graphQL.png", "Rest"];
-  const infra = ["AWS.png", "Ansible.png", "openshift.svg", "grafana.png"];
+  const infra = ["AWS.png", "Ansible.png", "openshift.svg", "grafana.png", "shopify.svg"];
 
 
   const [copied, setCopied] = useState(false);
