@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -7,7 +8,6 @@ import Lottie from "react-lottie";
 import { cn } from "@/lib/utils";
 
 
-import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
@@ -116,9 +116,9 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
           // add background animation , remove the p tag
-          <BackgroundGradientAnimation>
+          //<BackgroundGradientAnimation>
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-          </BackgroundGradientAnimation>
+          //</BackgroundGradientAnimation>
         )}
 
         <div
@@ -145,44 +145,36 @@ export const BentoGridItem = ({
             <div className="flex flex-wrap gap-3 lg:gap-5 max-w-full">
               {/* Display all tech stack icons */}
               {frontEnd.map((item, i) => (
-                <div>
                 <img
                   key={i}
                   src={`/${item}`} // Adjust the path to your icons
                   alt={item}
                   className="w-6 h-6 lg:w-8 lg:h-8 opacity-50 lg:opacity-100"
                 />
-                </div>
               ))}
               {backEnd.map((item, i) => (
-                <div>
-                  <img
-                    key={i}
-                    src={`/${item}`} // Adjust the path to your icons
-                    alt={item}
-                    className="w-6 h-6 lg:w-8 lg:h-8 opacity-50 lg:opacity-100"
-                  />
-                </div>
+                <img
+                  key={i}
+                  src={`/${item}`} // Adjust the path to your icons
+                  alt={item}
+                  className="w-6 h-6 lg:w-8 lg:h-8 opacity-50 lg:opacity-100"
+                />
               ))}
               {dataBase.map((item, i) => (
-                <div>
-                  <img
-                    key={i}
-                    src={`/${item}`} // Adjust the path to your icons
-                    alt={item}
-                    className="w-6 h-6 lg:w-8 lg:h-8 opacity-50 lg:opacity-100"
-                  />
-                </div>
+                <img
+                  key={i}
+                  src={`/${item}`} // Adjust the path to your icons
+                  alt={item}
+                  className="w-6 h-6 lg:w-8 lg:h-8 opacity-50 lg:opacity-100"
+                />
               ))}
               {infra.map((item, i) => (
-                <div>
-                  <img
-                    key={i}
-                    src={`/${item}`} // Adjust the path to your icons
-                    alt={item}
-                    className="w-6 h-6 lg:w-8 lg:h-8 opacity-50 lg:opacity-100"
-                  />
-                </div>
+                <img
+                  key={i}
+                  src={`/${item}`} // Adjust the path to your icons
+                  alt={item}
+                  className="w-6 h-6 lg:w-8 lg:h-8 opacity-50 lg:opacity-100"
+                />
               ))}
             </div>
           )}
