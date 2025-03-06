@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "MeowMart",
     des: "A fullstack end-to-end Ecommerce bidding system to select your fav Cat, using Apache Tomcat, Java, NextJS and containerized with Docker/",
-    img: "/meow-mart.png",
+    img: "/meow-mart.PNG",
     iconLists: ["/next.svg", "/Java.svg"],
     link: "https://github.com/Rizvi-Mohammed/MeowMart",
   },
@@ -82,7 +82,7 @@ export const projects = [
     id: 2,
     title: "The Drive - Storage Management Solution",
     des: "A Complete storage management solution built using NextJS and internal frameworks along with Appwrite SDK.",
-    img: "/storge.png",
+    img: "/storge.PNG",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://github.com/Rizvi-Mohammed/Drive",
   }
