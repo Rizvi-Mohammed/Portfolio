@@ -1,7 +1,7 @@
 export const navItems = [
-  { name: "About", link: "#about" },
+  { name: "Experience", link: "#exp" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Approach", link: "#approach" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -73,18 +73,18 @@ export const projects = [
   {
     id: 1,
     title: "MeowMart",
-    des: "A full end-to-end Ecommerce bidding system to select your fav Cat, using Apache Tomcat, Java, NextJS and containerized with Docker",
-    img: "/p1.svg",
+    des: "A fullstack end-to-end Ecommerce bidding system to select your fav Cat, using Apache Tomcat, Java, NextJS and containerized with Docker/",
+    img: "/meow-mart.png",
     iconLists: ["/next.svg", "/Java.svg"],
     link: "https://github.com/Rizvi-Mohammed/MeowMart",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "The Drive - Storage Management Solution",
+    des: "A Complete storage management solution built using NextJS and internal frameworks along with Appwrite SDK.",
+    img: "/storge.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "",
+    link: "https://github.com/Rizvi-Mohammed/Drive",
   }
 ];
 
