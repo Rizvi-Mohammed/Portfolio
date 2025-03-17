@@ -70,19 +70,27 @@ export const gridItems = [
 ];
 
 export const projects = [
-  {
+ {
     id: 1,
+    title: "LifeTime AI",
+    des: "A Full Stack AI application - Helps increase customer life time value by providing insights and messages based on product and Customer information(location, weather, age category).",
+    img: "/ltv.PNG",
+    iconLists: ["/next.svg", "/Java.svg"],
+    link: "https://github.com/Rizvi-Mohammed/LifeTimeValue",
+  },
+  {
+    id: 2,
     title: "MeowMart",
     des: "A fullstack end-to-end Ecommerce bidding system to select your fav Cat, using Apache Tomcat, Java, NextJS and containerized with Docker/",
-    img: "/meow-mart.PNG",
+    img: "/meow-mart.png",
     iconLists: ["/next.svg", "/Java.svg"],
     link: "https://github.com/Rizvi-Mohammed/MeowMart",
   },
   {
-    id: 2,
+    id: 3,
     title: "The Drive - Storage Management Solution",
     des: "A Complete storage management solution built using NextJS and internal frameworks along with Appwrite SDK.",
-    img: "/storge.PNG",
+    img: "/storge.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://github.com/Rizvi-Mohammed/Drive",
   }
