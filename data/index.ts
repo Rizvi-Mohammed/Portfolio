@@ -75,7 +75,7 @@ export const projects = [
     title: "LifeTime AI",
     des: "A Full Stack AI application - Helps increase customer life time value by providing insights and messages based on product and Customer information(location, weather, age category).",
     img: "/ltv.PNG",
-    iconLists: ["/next.svg", "/Java.svg"],
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/node.PNG", "/nest.PNG""],
     link: "https://github.com/Rizvi-Mohammed/LifeTimeValue",
   },
   {
