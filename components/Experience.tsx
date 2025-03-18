@@ -1,7 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
+
+// Define the type for work experience card
+interface WorkExperienceCard {
+  id: string | number;
+  title: string;
+  desc: string;
+  thumbnail: string;
+  achievements: string;
+}
 
 const Experience = () => {
   return (
@@ -19,10 +28,21 @@ const Experience = () => {
   );
 };
 
-const FlipCard = ({ card }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+interface FlipCardProps {
+  card: WorkExperienceCard;
+}
 
-  const handleFlip = (e) => {
+const FlipCard: React.FC<FlipCardProps> = ({ card }) => {
+  // Use client-side only state to prevent hydration mismatch
+  const [isFlipped, setIsFlipped] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Only run on client-side to prevent hydration mismatch
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const handleFlip = (e: React.MouseEvent) => {
     e.stopPropagation();
     setIsFlipped(!isFlipped);
   };
@@ -33,7 +53,7 @@ const FlipCard = ({ card }) => {
         className="flip-card relative w-full h-full min-h-64 transition-all duration-700"
         style={{
           transformStyle: "preserve-3d",
-          transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)"
+          transform: isMounted && isFlipped ? "rotateY(180deg)" : "rotateY(0deg)"
         }}
       >
         {/* Front Card */}
@@ -62,7 +82,7 @@ const FlipCard = ({ card }) => {
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
                 src={card.thumbnail}
-                alt={card.thumbnail}
+                alt={card.title}
                 className="lg:w-32 md:w-20 w-16"
               />
               <div className="lg:ms-5">
@@ -74,12 +94,14 @@ const FlipCard = ({ card }) => {
                 </p>
               </div>
             </div>
-            <button
-              onClick={handleFlip}
-              className="absolute bottom-4 right-4 bg-purple text-white px-4 py-2 rounded-md hover:bg-opacity-80 transition-all"
-            >
-              Key Achievements
-            </button>
+            {isMounted && (
+              <button
+                onClick={handleFlip}
+                className="absolute bottom-4 right-4 bg-purple text-white px-4 py-2 rounded-md hover:bg-opacity-80 transition-all"
+              >
+                Key Achievements
+              </button>
+            )}
           </Button>
         </div>
 
@@ -116,12 +138,14 @@ const FlipCard = ({ card }) => {
                   {card.achievements}
                 </p>
               </div>
-              <button
-                onClick={handleFlip}
-                className="self-end bg-purple text-white px-4 py-2 rounded-md hover:bg-opacity-80 transition-all mt-4"
-              >
-                Back
-              </button>
+              {isMounted && (
+                <button
+                  onClick={handleFlip}
+                  className="self-end bg-purple text-white px-4 py-2 rounded-md hover:bg-opacity-80 transition-all mt-4"
+                >
+                  Back
+                </button>
+              )}
             </div>
           </Button>
         </div>
