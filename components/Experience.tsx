@@ -16,7 +16,8 @@ const Experience = () => {
   return (
     <div className="py-20 w-full" id="exp">
       <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+        My <span className="text-purple">work experience</span> <br/>
+        <span className="text-xs text-center">(Click on the each position to learn more)</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-2 grid-cols-1 gap-10">
@@ -78,6 +79,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ card }) => {
               width: "100%"
             }}
             className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            onClick={handleFlip}
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
@@ -94,14 +96,6 @@ const FlipCard: React.FC<FlipCardProps> = ({ card }) => {
                 </p>
               </div>
             </div>
-            {isMounted && (
-              <button
-                onClick={handleFlip}
-                className="absolute bottom-4 right-4 bg-purple text-white px-4 py-2 rounded-md hover:bg-opacity-80 transition-all"
-              >
-                Key Achievements
-              </button>
-            )}
           </Button>
         </div>
 
