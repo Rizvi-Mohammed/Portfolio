@@ -70,7 +70,7 @@ export const gridItems = [
 ];
 
 export const projects = [
- {
+  {
     id: 1,
     title: "LifeTime AI",
     des: "A Full Stack AI application - Helps increase customer life time value by providing insights and messages based on product and Customer information(location, weather, age category).",
@@ -165,10 +165,12 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Full Stack Developer - York University",
+    title: "Lead Web Developer - York University",
     desc: "Revamped psychology research website using modern frontend and backend flows - with a low-code final product.",
     className: "md:col-span-2",
     thumbnail: "/YU.jpg",
+    achievements: "● Provided a very easy to use Data collection and automation pipeline, stream-lining all Data work.\n" +
+      "\n ● Modern, Scalable, and Accessible Website for Information flow.",
   },
   {
     id: 2,
@@ -176,13 +178,18 @@ export const workExperience = [
     desc: "Designed and developed Storage related cloud and automation infrastructure for Teams at RBC.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/rbc-4.svg",
+    achievements: "● Architected and Built a simple, easy to maintain and highly functional Testing Framework -  \n" +
+      "\n Enabling Automated, On-demand, microservice-based and usecase-based testing with just an click or API call." + 
+      "\n ● Created an ELK pipeline for Data collection, preservation and visualization.",
   },
   {
     id: 3,
-    title: "Full Stack Developer - WebKraftz",
-    desc: "Fullstack Developer - providing Theme development, customization, automations, apps, and functions.",
+    title: "Web Developer - WebKraftz",
+    desc: "Fullstack Shopify Developer - providing Theme development, customization, automations, apps, and functions.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/wk.jpeg",
+    achievements: "● Built Fully functional Shopify Apps, Automating 60% of Ecommerce logic implementation.\n" +
+      "\n ● Implemented Advance Technologies such as Data Streaming, UI components, Scripts, Authentication, and Cloud for Ecommerce merchants across various platforms.",
   },
   {
     id: 4,
@@ -190,6 +197,8 @@ export const workExperience = [
     desc: "Helped first and second year students navigate Engineering courses, internships and held classes for foundations of Electrical and Computer Engineering.",
     className: "md:col-span-2",
     thumbnail: "/lse.png",
+    achievements: "● Mentored 30+ students at YorkU, guiding them in internships and career growth, fostering a learning culture.\n" +
+                  "\n● Conducted weekly classes for Foundations of EECS.",
   },
 ];
 
