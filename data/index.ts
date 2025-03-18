@@ -165,7 +165,7 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Lead Web Developer - York University",
+    title: "Lead Full Stack Developer - York University",
     desc: "Revamped psychology research website using modern frontend and backend flows - with a low-code final product.",
     className: "md:col-span-2",
     thumbnail: "/YU.jpg",
@@ -184,7 +184,7 @@ export const workExperience = [
   },
   {
     id: 3,
-    title: "Web Developer - WebKraftz",
+    title: "Full Stack Developer - WebKraftz",
     desc: "Fullstack Shopify Developer - providing Theme development, customization, automations, apps, and functions.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/wk.jpeg",
