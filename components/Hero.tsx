@@ -50,7 +50,7 @@ const Hero = () => {
             Hi! I&apos;m Abbas, a Fullstack Software and Web Developer based in Vaughan, ON.
           </p>
 
-          <a href="#about">
+          <a href="#exp">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
